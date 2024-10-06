@@ -6,6 +6,7 @@
 #include "recovery_passes.h"
 #include "super.h"
 #include "thread_with_file.h"
+#include <linux/kernel.h>  // dump_stack()
 
 #define FSCK_ERR_RATELIMIT_NR	10
 
