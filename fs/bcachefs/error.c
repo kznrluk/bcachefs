@@ -13,7 +13,7 @@
 bool bch2_inconsistent_error(struct bch_fs *c)
 {
 	set_bit(BCH_FS_error, &c->flags);
-	dump_stack()
+	dump_stack();
 	switch (c->opts.errors) {
 	case BCH_ON_ERROR_continue:
 		return false;
